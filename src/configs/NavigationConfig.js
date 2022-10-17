@@ -5,6 +5,8 @@ import {
   GiftOutlined,
   ShopOutlined,
   UsergroupAddOutlined,
+  SettingOutlined,
+  MobileOutlined,
   ShoppingOutlined,
   AppstoreOutlined,
   FileTextOutlined,
@@ -186,7 +188,7 @@ const mainNavTree = [{
   submenu: [
     {
       key: 'main-dashboard',
-      path: `${APP_PREFIX_PATH}/main`,
+      path: `${APP_PREFIX_PATH}/main/`,
       title: 'sidenav.main.dashboard',
       icon: DashboardOutlined,
       breadcrumb: false,
@@ -194,14 +196,14 @@ const mainNavTree = [{
     },
     {
       key: 'main-catalog',
-      path: `${APP_PREFIX_PATH}/main`,
+      path: `${APP_PREFIX_PATH}/main/catalog`,
       title: 'sidenav.main.catalog',
       icon: ShoppingCartOutlined,
       breadcrumb: false,
       submenu: [
         {
           key: 'main-catalog-products',
-          path: `${APP_PREFIX_PATH}/main`,
+          path: `${APP_PREFIX_PATH}/main/catalog/products`,
           title: 'sidenav.main.catalog.products',
           icon: '',
           breadcrumb: false,
@@ -209,7 +211,7 @@ const mainNavTree = [{
         },
         {
           key: 'main-catalog-сategories',
-          path: `${APP_PREFIX_PATH}/main`,
+          path: `${APP_PREFIX_PATH}/main/catalog/сategories`,
           title: 'sidenav.main.catalog.сategories',
           icon: '',
           breadcrumb: false,
@@ -217,7 +219,7 @@ const mainNavTree = [{
         },
         {
           key: 'main-catalog-сollections',
-          path: `${APP_PREFIX_PATH}/main`,
+          path: `${APP_PREFIX_PATH}/main/catalog/сollections`,
           title: 'sidenav.main.catalog.сollections',
           icon: '',
           breadcrumb: false,
@@ -225,7 +227,7 @@ const mainNavTree = [{
         },
         {
           key: 'main-catalog-combo',
-          path: `${APP_PREFIX_PATH}/main`,
+          path: `${APP_PREFIX_PATH}/main/catalog/combo`,
           title: 'sidenav.main.catalog.combo',
           icon: '',
           breadcrumb: false,
@@ -285,14 +287,14 @@ const mainNavTree = [{
     {
       key: 'main-offlinePoint',
       path: `${APP_PREFIX_PATH}/main`,
-      title: 'sidenav.main.offlinePoint',
+      title: 'sidenav.main.offlinePoints',
       icon: ShopOutlined,
       breadcrumb: false,
       submenu: [
         {
           key: 'main-offlinePoint-addresses',
           path: `${APP_PREFIX_PATH}/main`,
-          title: 'sidenav.main.offlinePoint.addresses',
+          title: 'sidenav.main.offlinePoints.addresses',
           icon: '',
           breadcrumb: false,
           submenu: []
@@ -300,7 +302,7 @@ const mainNavTree = [{
         {
           key: 'main-offlinePoint-geofences',
           path: `${APP_PREFIX_PATH}/main`,
-          title: 'sidenav.main.offlinePoint.geofences',
+          title: 'sidenav.main.offlinePoints.geofences',
           icon: '',
           breadcrumb: false,
           submenu: []
@@ -327,33 +329,33 @@ const mainNavTree = [{
 }]
 
 const systemNavTree = [{
-  key: 'main',
+  key: 'system',
   path: `${APP_PREFIX_PATH}/main`,
-  title: 'sidenav.main',
+  title: 'sidenav.system',
   icon: '',
   breadcrumb: false,
   submenu: [
     {
-      key: 'dashboards-default',
+      key: 'system-settings',
       path: `${APP_PREFIX_PATH}/dashboards/default`,
-      title: 'sidenav.dashboard.default',
-      icon: DashboardOutlined,
+      title: 'sidenav.system.settings',
+      icon: SettingOutlined,
       breadcrumb: false,
       submenu: []
     },
     {
-      key: 'dashboards-analytic',
+      key: 'system-mobileApp',
       path: `${APP_PREFIX_PATH}/dashboards/analytic`,
-      title: 'sidenav.dashboard.analytic',
-      icon: DotChartOutlined,
+      title: 'sidenav.system.mobileApp',
+      icon: MobileOutlined,
       breadcrumb: false,
       submenu: []
     },
     {
-      key: 'dashboards-sales',
+      key: 'system-pageLogs',
       path: `${APP_PREFIX_PATH}/dashboards/sales`,
-      title: 'sidenav.dashboard.sales',
-      icon: FundOutlined,
+      title: 'sidenav.system.pageLogs',
+      icon: FileTextOutlined,
       breadcrumb: false,
       submenu: []
     }
@@ -1135,6 +1137,7 @@ const componentsNavTree = [
 
 const navigationConfig = [
   ...mainNavTree,
+  ...systemNavTree,
   //...dashBoardNavTree,
   //...appsNavTree,
   //...componentsNavTree,
