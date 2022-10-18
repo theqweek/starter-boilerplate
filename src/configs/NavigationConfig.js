@@ -188,7 +188,7 @@ const mainNavTree = [{
   submenu: [
     {
       key: 'main-dashboard',
-      path: `${APP_PREFIX_PATH}/main/`,
+      path: `${APP_PREFIX_PATH}/main/dashboard`,
       title: 'sidenav.main.dashboard',
       icon: DashboardOutlined,
       breadcrumb: false,
@@ -237,7 +237,7 @@ const mainNavTree = [{
     },
     {
       key: 'main-orders',
-      path: `${APP_PREFIX_PATH}/main`,
+      path: `${APP_PREFIX_PATH}/main/orders`,
       title: 'sidenav.main.orders',
       icon: ShoppingOutlined,
       breadcrumb: false,
@@ -245,32 +245,32 @@ const mainNavTree = [{
     },
     {
       key: 'main-clients',
-      path: `${APP_PREFIX_PATH}/main`,
+      path: `${APP_PREFIX_PATH}/main/clients`,
       title: 'sidenav.main.сlients',
       icon: UserOutlined,
-      breadcrumb: false,
+      breadcrumb: true,
       submenu: [
         {
-          key: 'main-сlients-list',
-          path: `${APP_PREFIX_PATH}/main`,
-          title: 'sidenav.main.сlients.list',
+          key: 'main-сlients-user-list',
+          path: `${APP_PREFIX_PATH}/main/clients/user-list`,
+          title: 'sidenav.main.сlients.user-list',
           icon: '',
-          breadcrumb: false,
+          breadcrumb: true,
           submenu: []
         },
         {
           key: 'main-сlients-groups',
-          path: `${APP_PREFIX_PATH}/main`,
+          path: `${APP_PREFIX_PATH}/main/clients/groups`,
           title: 'sidenav.main.сlients.groups',
           icon: '',
-          breadcrumb: false,
+          breadcrumb: true,
           submenu: []
         },
       ]
     },
     {
       key: 'main-banners',
-      path: `${APP_PREFIX_PATH}/main`,
+      path: `${APP_PREFIX_PATH}/main/banners`,
       title: 'sidenav.main.banners',
       icon: PictureOutlined,
       breadcrumb: false,
@@ -278,7 +278,7 @@ const mainNavTree = [{
     },
     {
       key: 'main-promo',
-      path: `${APP_PREFIX_PATH}/main`,
+      path: `${APP_PREFIX_PATH}/main/promo`,
       title: 'sidenav.main.promo',
       icon: GiftOutlined,
       breadcrumb: false,
@@ -286,14 +286,14 @@ const mainNavTree = [{
     },
     {
       key: 'main-offlinePoint',
-      path: `${APP_PREFIX_PATH}/main`,
+      path: `${APP_PREFIX_PATH}/main/offline-points`,
       title: 'sidenav.main.offlinePoints',
       icon: ShopOutlined,
       breadcrumb: false,
       submenu: [
         {
           key: 'main-offlinePoint-addresses',
-          path: `${APP_PREFIX_PATH}/main`,
+          path: `${APP_PREFIX_PATH}/main/offline-points/addresses`,
           title: 'sidenav.main.offlinePoints.addresses',
           icon: '',
           breadcrumb: false,
@@ -301,7 +301,7 @@ const mainNavTree = [{
         },
         {
           key: 'main-offlinePoint-geofences',
-          path: `${APP_PREFIX_PATH}/main`,
+          path: `${APP_PREFIX_PATH}/main/offline-points/geofences`,
           title: 'sidenav.main.offlinePoints.geofences',
           icon: '',
           breadcrumb: false,
@@ -311,7 +311,7 @@ const mainNavTree = [{
     },
     {
       key: 'main-employees',
-      path: `${APP_PREFIX_PATH}/main`,
+      path: `${APP_PREFIX_PATH}/main/employees`,
       title: 'sidenav.main.employees',
       icon: UsergroupAddOutlined,
       breadcrumb: false,
@@ -319,7 +319,7 @@ const mainNavTree = [{
     },
     {
       key: 'main-newsletters',
-      path: `${APP_PREFIX_PATH}/main`,
+      path: `${APP_PREFIX_PATH}/main/newsletters`,
       title: 'sidenav.main.newsletters',
       icon: MailOutlined,
       breadcrumb: false,
@@ -330,14 +330,14 @@ const mainNavTree = [{
 
 const systemNavTree = [{
   key: 'system',
-  path: `${APP_PREFIX_PATH}/main`,
+  path: `${APP_PREFIX_PATH}/system`,
   title: 'sidenav.system',
   icon: '',
   breadcrumb: false,
   submenu: [
     {
       key: 'system-settings',
-      path: `${APP_PREFIX_PATH}/dashboards/default`,
+      path: `${APP_PREFIX_PATH}/system/settings`,
       title: 'sidenav.system.settings',
       icon: SettingOutlined,
       breadcrumb: false,
@@ -345,7 +345,7 @@ const systemNavTree = [{
     },
     {
       key: 'system-mobileApp',
-      path: `${APP_PREFIX_PATH}/dashboards/analytic`,
+      path: `${APP_PREFIX_PATH}/system/mobile-app`,
       title: 'sidenav.system.mobileApp',
       icon: MobileOutlined,
       breadcrumb: false,
@@ -353,7 +353,7 @@ const systemNavTree = [{
     },
     {
       key: 'system-pageLogs',
-      path: `${APP_PREFIX_PATH}/dashboards/sales`,
+      path: `${APP_PREFIX_PATH}/system/page-logs`,
       title: 'sidenav.system.pageLogs',
       icon: FileTextOutlined,
       breadcrumb: false,

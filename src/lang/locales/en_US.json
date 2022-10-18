@@ -10,7 +10,7 @@
 	"sidenav.main.catalog.combo": "Комбо",
 	"sidenav.main.orders": "Заказы",
 	"sidenav.main.сlients": "Клиенты",
-	"sidenav.main.сlients.list": "Список клиентов",
+	"sidenav.main.сlients.user-list": "Список клиентов",
 	"sidenav.main.сlients.groups": "Группы клиентов",
 	"sidenav.main.banners": "Баннеры",
 	"sidenav.main.promo": "Промокоды",
@@ -23,7 +23,7 @@
 	"sidenav.system": "Системные",
 	"sidenav.system.settings": "Настройки",
 	"sidenav.system.mobileApp": "Мобильное приложение",
-	"sidenav.system.Pagelogs": "Логи",
+	"sidenav.system.pageLogs": "Логи",
 
 	"sidenav.apps": "Apps",
 	"sidenav.apps.mail": "Mail",
