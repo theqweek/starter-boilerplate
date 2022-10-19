@@ -6,7 +6,7 @@ const Clients = ({ match }) => {
 	return (
 		<Suspense fallback={<Loading cover="content"/>}>
 			<Switch>
-				<Route path={`${match.url}/user-list`} component={lazy(() => import(`./user-list`))} />
+				<Route path={`${match.url}/user-list`} component={lazy(() => import(`./user-list`))}/>
 				<Route path={`${match.url}/groups`} component={lazy(() => import(`./groups`))} />
 				<Redirect from={`${match.url}`} to={`${match.url}/user-list`} />
 			</Switch>

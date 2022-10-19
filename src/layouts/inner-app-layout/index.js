@@ -59,7 +59,7 @@ export const InnerAppLayout = props => {
 			}
 			<div className={`main-content ${pageHeader? 'has-page-header' : ''} ${sideContentGutter? 'gutter' : 'no-gutter'}`}>
 				{isMobile ? 
-					<div className={`font-size-lg mb-3 ${!sideContentGutter ? 'pt-3 px-3' : ''}`}>
+					<div className={`font-size-lg mb-6 ${!sideContentGutter ? 'pt-3 px-3' : ''}`}>
 						<MenuOutlined onClick={() => openSideContentMobile()}/>
 					</div>
 					:
